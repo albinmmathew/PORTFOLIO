@@ -21,5 +21,9 @@ def contact():
         flash('Thank you for your message! I will get back to you soon.', 'success')
         return redirect(url_for('index') + '#contact')
 
+@app.route('/health')
+def health():
+    return "OK, Server is running!"
+
 if __name__ == '__main__':
     app.run(debug=True)
