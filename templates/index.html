@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1 class="animate-up">Hello, I'm <span class="highlight">Albin Mammen Mathew</span></h1>
+            <h2 class="animate-up delay-1">MCA Student & Developer</h2>
+            <p class="animate-up delay-2">Building digital experiences that matter.</p>
+            <a href="#projects" class="btn btn-primary animate-up delay-3">View My Work</a>
+            <a href="{{ url_for('static', filename='documents/Resume.pdf') }}"
+                class="btn btn-outline animate-up delay-3" download>Download CV</a>
+        </div>
+        <div class="hero-image animate-in">
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile">
+        </div>
+    </div>
+</header>
+
+<section id="about" class="section about">
+    <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate developer with a knack for creating elegant solutions to complex problems.
+                    Currently pursuing my Master of Computer Applications (MCA) at Rajagiri College of Social Sciences,
+                    I am constantly expanding my skillset in web development and software engineering.</p>
+                <p>My journey in tech has been driven by curiosity and a constant desire to learn. I enjoy collaborating
+                    with teams and turning ideas into reality.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education-skills" class="section education-skills">
+    <div class="container">
+        <h2 class="section-title">Education & <span>Skills</span></h2>
+        <div class="edu-skills-grid">
+            <div class="education-column glass-card">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">Present</span>
+                        <h4>Master of Computer Applications (MCA)</h4>
+                        <p>Rajagiri College of Social Sciences (RCSS)</p>
+                        <p>Focusing on Advanced Software Engineering and Web Technologies.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">Graduate</span>
+                        <h4>BSc Mathematics</h4>
+                        <p>St. Berchmans College</p>
+                        <p>Graduated with a strong analytical foundation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column glass-card">
+                <h3><i class="fas fa-code"></i> Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h4>Languages & Backend</h4>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C/C++</span>
+                            <span>Flask</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>VS Code</span>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2 class="section-title">Projects & Academic Work</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, #2b5876, #4e4376);">
+                        <i class="fas fa-code" style="font-size: 3rem; color: rgba(255,255,255,0.2);"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Mini Projects and Games</h3>
+                    <p>A simple few mini projecct which can be implemented and fun to use. </p>
+                    <div class="project-tags">
+                        <span>C/C++</span>
+                        <span>Java</span>
+                        <span>Games</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/albinmmathew/Mini-Projects-and-Games" class="btn-sm outline"
+                            target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, #42275a, #734b6d);">
+                        <i class="fas fa-coffee" style="font-size: 3rem; color: rgba(255,255,255,0.2);"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Java Applications (S2)</h3>
+                    <p>Object-oriented programming projects and applications developed using Java.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>OOP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/albinmmathew/JAVA_S2" class="btn-sm outline" target="_blank">View
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, #cc2b5e, #753a88);">
+                        <i class="fas fa-laptop-code" style="font-size: 3rem; color: rgba(255,255,255,0.2);"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI Chatbot using Flask</h3>
+                    <p>Implementation of a chatbot using Flask and Gemini 2.5-flash API.</p>
+                    <div class="project-tags">
+                        <span>Flask</span>
+                        <span>Gemini</span>
+                        <span>Chatbot</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/albinmmathew/AI-CHATBOT" class="btn-sm outline" target="_blank">View
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>albinmmathew@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/albinmmathew/" target="_blank">LinkedIn Profile</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-github"></i>
+                    <p><a href="https://github.com/albinmmathew" target="_blank">GitHub Profile</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Kochi, Kerala, India</p>
+                </div>
+            </div>
+            <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
