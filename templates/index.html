@@ -12,7 +12,11 @@
                 class="btn btn-outline animate-up delay-3" download>Download CV</a>
         </div>
         <div class="hero-image animate-in">
-            <img src="{{ url_for('static', filename='images/profile_neon.png') }}" alt="Profile" class="neon-tech-orb">
+            <div class="profile-gif-wrapper">
+                <img src="{{ url_for('static', filename='images/profile_anim.gif') }}" alt="Profile"
+                    class="profile-gif">
+                <div class="gif-overlay"></div>
+            </div>
         </div>
     </div>
 </header>
